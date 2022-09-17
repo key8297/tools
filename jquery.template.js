@@ -7,7 +7,6 @@ const ApplyTemplateValues = (template, data) => {
     var matches = html.match(pattern);    
 
     matches.forEach(name => {        
-            if(data[name]) 
                 html = html.replace(`{{${name}}}`, data[name]);   
         });
 
